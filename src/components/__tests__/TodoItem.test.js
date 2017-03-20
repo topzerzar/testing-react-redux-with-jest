@@ -1,12 +1,13 @@
+import React from 'react'
+import { shallow } from 'enzyme'
+import TodoItem from '../TodoItem'
+
 // Describe what to test
 describe('TodoItem', () => {
   // Test Scenario
-  it('tests expect 5 tobe 5', () => {
-    expect(5).toBe(5)
-  })
-  // Test Scenario
-  it('check array', () => {
-    expect([1, 2, 3]).toEqual([1, 2, 3])
+  it('render correct structure', () => {
+    const component = shallow(<TodoItem text="Hello" />);
+    expect(component.is('li')).toBe(true)
   })
 })
 
