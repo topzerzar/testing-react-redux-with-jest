@@ -1,6 +1,5 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
 import TodoItem from '../TodoItem'
 
 // Describe what to test
@@ -8,12 +7,12 @@ describe('TodoItem', () => {
   // Test Scenario
   it('match its snapshot - not complete', () => {
     const component = shallow(<TodoItem text="Not Complete" />);
-    expect(toJson(component)).toMatchSnapshot()
+    expect(component).toMatchSnapshot()
   })
 
   it('match its snapshot - complete', () => {
     const component = shallow(<TodoItem text="Has Complete" complete />);
-    expect(toJson(component)).toMatchSnapshot()
+    expect(component).toMatchSnapshot()
   })
 
   it('render correct structure', () => {
