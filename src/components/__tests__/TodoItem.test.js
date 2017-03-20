@@ -14,7 +14,7 @@ describe('TodoItem', () => {
   })
 
   it('match its snapshot - complete', () => {
-    component.setProps({ complete: true })
+    component.setProps({ complete: true }, { text: 'Hello' })
     expect(component).toMatchSnapshot()
   })
 

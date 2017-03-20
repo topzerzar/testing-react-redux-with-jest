@@ -1,8 +1,8 @@
 import todosReducer from '../todosReducer'
 
-describe('', () => {
+describe('todosReducer', () => {
   it('returns correct initial state', () => {
-    expect(todosReducers(underfined, {})),toEqual([])
+    expect(todosReducer(undefined, {})).toEqual([])
   })
 
   it('returns current state if no action matched', () => {

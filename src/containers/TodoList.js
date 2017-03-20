@@ -1,8 +1,8 @@
 import { connect } from 'react-redux'
 import TodoList from '../components/TodoList'
+import {
+  selectTodos,
+} from '../selectors/todoSelector'
 
-const mapStateToProps = state => ({
-  todos: state.todos,
-})
 
-export default connect(mapStateToProps)(TodoList)
+export default connect(selectTodos)(TodoList)

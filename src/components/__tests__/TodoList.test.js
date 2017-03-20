@@ -7,10 +7,12 @@ describe('TodoItem', () => {
   let component
   let props
   beforeEach(() => {
-    props = [
-        { id: 1, text: 'feed cat', complete: false },
-        { id: 1, text: 'feed cat', complete: false },
-    ]
+    props = {
+      todos: [
+        { id: 1, text: 'Feed cat', complete: false },
+        { id: 2, text: 'Drink coffee', complete: true },
+      ],
+    }
     component = shallow(<TodoList {...props} />)
   })
   // Test Scenario
