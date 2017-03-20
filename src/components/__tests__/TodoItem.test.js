@@ -23,7 +23,7 @@ describe('TodoItem', () => {
   })
 
   it('has complete class if receive complete props', () => {
-    component.setProps({ complete: true })
+    component.setProps({ complete: true, text: 'Hello' })
     expect(component.hasClass('complete')).toBe(true)
     expect(component.text()).toBe('Hello')
   })

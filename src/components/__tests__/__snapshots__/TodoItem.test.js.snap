@@ -4,7 +4,7 @@ exports[`TodoItem match its snapshot - complete 1`] = `
 <li
   className="complete"
 >
-  Has Complete
+  Not Complete
 </li>
 `;
 
