@@ -1,6 +1,6 @@
 import React from 'react';
-import { storiesOf, action, linkTo } from '@kadira/storybook';
-import TodoItem from '../src/components/TodoItem';
+import { storiesOf } from '@kadira/storybook';
+import TodoItem from '../TodoItem';
 
 storiesOf('TodoItem', module)
   .add('Not Have', () => (

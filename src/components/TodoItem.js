@@ -10,7 +10,7 @@ TodoItem.propTypes = {
 }
 
 TodoItem.defaultProps = {
-  complete: true,
+  complete: false,
 }
 
 export default TodoItem
